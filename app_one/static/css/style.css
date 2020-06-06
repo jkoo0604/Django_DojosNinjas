@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+}
+
+.upperforms {
+    text-align: center;
+}
+
+.form_one,
+.form_two {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    min-height: 350px;
+    padding: 0px 15px;
+}
+
+label {
+    text-align: left;
+}
+
+.upperforms div button {
+    margin-left: 100px;
+}
+
+.displayresult ul ul {
+    padding-left: 20px;
+}
+
+.displayresult {
+    text-align: center;
+}
+
+.result {
+    text-align: left;
+    width: 500px;
+    margin-left: 250px;
+}
+
+.title {
+    padding: 15px 0px;
+}
+
+li {
+    padding-top: 8px;
+}
+
+.btn-sm {
+    font-size: 11px;
+    padding: 3px;
+}
+
+.displayresult ul li {
+    font-weight: bold;
+}
+
+.displayresult ul ul li {
+    font-weight: normal;
+}

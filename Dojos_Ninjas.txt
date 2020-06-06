@@ -1,0 +1,45 @@
+Dojos_Ninjas
+
+
+from app_one.models import *
+
+Dojo.objects.create(name='Painting',city='Seattle',state='WA')
+Dojo.objects.create(name='Sculpting',city='San Jose',state='CA')
+Dojo.objects.create(name='Architecture',city='Burbank',state='CA')
+
+
+dojo1=Dojo.objects.get(id=1)
+dojo1.delete()
+dojo2=Dojo.objects.get(id=2)
+dojo2.delete()
+dojo3=Dojo.objects.get(id=3)
+dojo3.delete()
+
+
+Dojo.objects.create(name='Painting',city='Seattle',state='WA')
+Dojo.objects.create(name='Sculpting',city='San Jose',state='CA')
+Dojo.objects.create(name='Architecture',city='Burbank',state='CA')
+
+
+Ninja.objects.create(first_name='Leonardo',last_name='da Vinci',dojo_id=1)
+Ninja.objects.create(first_name='Raffaello',last_name='Sanzio da Urbino',dojo_id=1)
+
+Ninja.objects.create(first_name='Michelangelo',last_name='di Lodovico Buonarroti Simoni',dojo_id=2)
+Ninja.objects.create(first_name='Donato',last_name='di Niccolo di Betto Bardi',dojo_id=2)
+
+Ninja.objects.create(first_name='Filippo',last_name='Brunelleschi',dojo_id=3)
+Ninja.objects.create(first_name='Giorgio',last_name='Vasari',dojo_id=3)
+Ninja.objects.create(first_name='Gian Lorenzo',last_name='Bernini',dojo_id=3)
+
+
+dojofirst=Dojo.objects.first()
+dojofirst.ninjas.all()
+
+dojolast=Dojo.objects.last()
+dojolast.ninjas.all()
+
+ninjalast=Ninja.objects.last()
+ninjalast.name
+
+
+Dojo.objects.create(name='Music',city='Oakland',state='CA',desc='new dojo')
